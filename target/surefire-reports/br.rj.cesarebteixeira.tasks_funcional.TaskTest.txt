@@ -1,0 +1,56 @@
+-------------------------------------------------------------------------------
+Test set: br.rj.cesarebteixeira.tasks_funcional.TaskTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 84.065 s <<< FAILURE! - in br.rj.cesarebteixeira.tasks_funcional.TaskTest
+naoDeveSalvarTarefaSemDescricao(br.rj.cesarebteixeira.tasks_funcional.TaskTest)  Time elapsed: 83.008 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#addTodo"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HPKH0DM', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\brboe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54550}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 30bcd932c1975c40d0d9a571cb4...}
+Session ID: 30bcd932c1975c40d0d9a571cb4166a3
+*** Element info: {Using=id, value=addTodo}
+	at br.rj.cesarebteixeira.tasks_funcional.TaskTest.naoDeveSalvarTarefaSemDescricao(TaskTest.java:75)
+
+deveSalvarTarefaComDataPassada(br.rj.cesarebteixeira.tasks_funcional.TaskTest)  Time elapsed: 84.064 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#addTodo"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HPKH0DM', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\brboe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54569}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c5731272a3db4487f5843d51f6d...}
+Session ID: c5731272a3db4487f5843d51f6d0bc00
+*** Element info: {Using=id, value=addTodo}
+	at br.rj.cesarebteixeira.tasks_funcional.TaskTest.deveSalvarTarefaComDataPassada(TaskTest.java:134)
+
+deveSalvarTarefaSemData(br.rj.cesarebteixeira.tasks_funcional.TaskTest)  Time elapsed: 83.845 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#addTodo"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HPKH0DM', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\brboe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54566}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 9f8744f60ff5c28ba0e07ae14e9...}
+Session ID: 9f8744f60ff5c28ba0e07ae14e90004b
+*** Element info: {Using=id, value=addTodo}
+	at br.rj.cesarebteixeira.tasks_funcional.TaskTest.deveSalvarTarefaSemData(TaskTest.java:105)
+
+deveSalvarTarefaComSucesso(br.rj.cesarebteixeira.tasks_funcional.TaskTest)  Time elapsed: 83.069 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#addTodo"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HPKH0DM', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\brboe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54551}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: e8201ac478cf20948e988cd05cd...}
+Session ID: e8201ac478cf20948e988cd05cd125c0
+*** Element info: {Using=id, value=addTodo}
+	at br.rj.cesarebteixeira.tasks_funcional.TaskTest.deveSalvarTarefaComSucesso(TaskTest.java:43)
+

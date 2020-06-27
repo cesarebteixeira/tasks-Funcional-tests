@@ -1,28 +1,36 @@
 package br.rj.cesarebteixeira.tasks_funcional;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 
 
 public class TaskTest {
-	public WebDriver acessarAplicacao() {
-		WebDriver  driver = new ChromeDriver();
-		driver.navigate().to("http://localhost:8001/tasks");
+	public WebDriver acessarAplicacao() throws MalformedURLException {
 		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+	//	WebDriver  driver = new ChromeDriver();
+		DesiredCapabilities cap = DesiredCapabilities.chrome();
+		WebDriver driver = new RemoteWebDriver(new URL("http://192.168.25.150:4444/wd/hub"), cap);
+		//o qual recebe dois parametros (1 (//Clients should connect to )- onde está o hub >devemos olhar no cmd para pegar o caminho)
+		// 2- cap > é o segundo paramentro(capabilities) que as informações do browser que eu devo usar
+		driver.navigate().to("http://localhost:8001/tasks");		
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		return driver;
 		
 		
 	}
 	
 	@Test
-	public void deveSalvarTarefaComSucesso() {
+	public void deveSalvarTarefaComSucesso() throws MalformedURLException {
 		
 		//usamos o método acima para fatorar o driver
 		//usamos o try abaixo para que o comando quit pudesse ser executado
@@ -54,7 +62,7 @@ public class TaskTest {
 
 
 	@Test
-	public void naoDeveSalvarTarefaSemDescricao() {
+	public void naoDeveSalvarTarefaSemDescricao() throws MalformedURLException {
 		
 		//usamos o método acima para fatorar o driver
 		//usamos o try abaixo para que o comando quit pudesse ser executado
@@ -84,7 +92,7 @@ public class TaskTest {
 		}
 	}
 	@Test
-	public void deveSalvarTarefaSemData() {
+	public void deveSalvarTarefaSemData() throws MalformedURLException {
 		
 		//usamos o método acima para fatorar o driver
 		//usamos o try abaixo para que o comando quit pudesse ser executado
@@ -113,7 +121,7 @@ public class TaskTest {
 		}
 	}	
 		@Test
-		public void deveSalvarTarefaComDataPassada() {
+		public void deveSalvarTarefaComDataPassada() throws MalformedURLException {
 			
 			//usamos o método acima para fatorar o driver
 			//usamos o try abaixo para que o comando quit pudesse ser executado
@@ -137,7 +145,7 @@ public class TaskTest {
 			String mensagem = driver.findElement(By.id("message")).getText();
 			Assert.assertEquals("Due date must not be in past", mensagem);
 			} finally	 {
-				    
+				
 			//FECHAR BROWSER
 			driver.quit();
 			}
